@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"> </script>
+
+    <title>Preencher Tabela</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Preencher Tabela</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br><br>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula"><br><br>
+
+        <label for="nota1">Nota 1º Bimestre:</label>
+        <input type="number" id="nota1"><br><br>
+
+        <label for="nota2">Nota 2º Bimestre:</label>
+        <input type="number" id="nota2"><br><br>
+
+        <button onclick="preencherTabela()">Preencher Tabela</button>
+    </div>
+
+    <h2>Informações</h2>
+    <table id="tabelaInfo">
+        <!-- Conteúdo da tabela -->
+    
+        <tr>
+            <th>Nome</th>
+            <th>Matrícula</th>
+            <th>Nota 1º Bimestre</th>
+            <th>Nota 2º Bimestre</th>
+        </tr>
+    </table>
+
+    <h2>Média e Status</h2>
+    <table id="tabelaMedia">
+        <tr>
+            <th>Nome</th>
+            <th>Matrícula</th>
+            <th>Média</th>
+            <th>Status</th>
+        </tr>
+    </table>
+
+ </html>

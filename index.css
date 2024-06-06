@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: #e50914;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0033;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 8px; /* Reduzindo o padding para um visual mais compacto */
+    text-align: left;
+}
+
+th {
+    background-color: #e50914;
+    color: #fff;
+}
+
+/* Redimensionando as tabelas */
+#tabelaInfo, #tabelaMedia {
+    max-width: 600px; /* Reduzindo a largura máxima */
+    margin: 0 auto; /* Centralizando na página */
+}
+
+/* Estilizando as linhas pares das tabelas */
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+/* Estilizando o hover nas células das tabelas */
+table tr:hover td {
+    background-color: #444;
+}
+
+.fadeIn {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centralizando horizontalmente */
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra */
+}
